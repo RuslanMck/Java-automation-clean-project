@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HealthCheck">
+
+    <test name="Include me">
+        <classes>
+            <class name="healthcheck.IncludeMe"/>
+        </classes>
+    </test>
+
+    <test name="Exclude Me" enabled="false">
+        <classes>
+            <class name="healthcheck.ExcludeMe"/>
+        </classes>
+    </test>
+
+    <test name="SelenideExampleTest">
+        <classes>
+            <class name="selenideexample.SelenideExampleTest"/>
+        </classes>
+    </test>
+</suite>
