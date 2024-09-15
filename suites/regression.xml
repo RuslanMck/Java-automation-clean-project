@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="HealthCheck">
 
-    <test name="Include me">
+    <test name="Include me" enabled="false">
         <classes>
             <class name="healthcheck.IncludeMe"/>
         </classes>
@@ -14,9 +14,15 @@
         </classes>
     </test>
 
-    <test name="SelenideExampleTest">
+    <test name="SelenideExampleTest" enabled="false">
         <classes>
             <class name="selenideexample.SelenideExampleTest"/>
+        </classes>
+    </test>
+
+    <test name="TheInternetLogin">
+        <classes>
+            <class name="theInternetTests.TheInternetLoginTests"/>
         </classes>
     </test>
 </suite>

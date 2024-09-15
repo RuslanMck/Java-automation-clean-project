@@ -36,7 +36,9 @@ public class SelenideExampleTest {
         SelenideBlogPage selenideBlogPage = new SelenideBlogPage();
 
 
-        googleHomePage.waitUntilAcceptCookieButtonIsVisible().clickCookieAcceptButton().waitUntilSearchInputFieldIsVisible().inputSearchKey("Selenide").pressEnter();
+//        googleHomePage.waitUntilAcceptCookieButtonIsVisible().clickCookieAcceptButton();
+
+        googleHomePage.waitUntilSearchInputFieldIsVisible().inputSearchKey("Selenide").pressEnter();
 
         googleHomePage.waitUntilResultsAreVisible().verifyNumberOfResults(2).clickFirstResult();
 
